@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@media (width > 640px) {
+    nav>a::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.15);
+        height: 3px;
+        width: 100%;
+        bottom: -39px;
+        transition: all 250ms ease-in-out;
+        opacity: 0;
+    }
+
+    nav>a:hover::after {
+
+        opacity: 1;
+    }
+
+    .active::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: white;
+        height: 3px;
+        width: 100%;
+        bottom: -39px;
+        opacity: 1;
+    }
+}
+
+@media (width > 768px) {
+    nav::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 2px;
+        background-color: rgba(255, 255, 255, 0.143);
+        width: 50%;
+        left: -45%;
+        bottom: 50%;
+    }
+
+}
+
+
+.secondNav {
+    position: relative;
+    color: white;
+}
+
+.secondNav::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    bottom: -12px; 
+}
+
+/* .rotator {
+    transform: rotate(0deg);
+    animation: rotation 15s linear infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* .barlow-condensed-regular {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bellefair-regular {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: normal;
+} */
