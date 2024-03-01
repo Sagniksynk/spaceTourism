@@ -2,9 +2,15 @@ import React, { useState, useRef } from 'react';
 import Navbar from './Navbar';
 import DestinationNav from './DestinationNav';
 import data from '../assets/data.json';
+import moon from '../assets/images/destination/image-moon.png'
+import mars from '../assets/images/destination/image-mars.png'
+import europa from '../assets/images/destination/image-europa.png'
+import titan from '../assets/images/destination/image-titan.png'
+
+
 const Destination = () => {
 	const [activeDestination, setactiveDestination] = useState(0);
-
+	const pics = [moon , mars , europa , titan]
 	return (
 		<div className='bg-destinationMobile sm:bg-destinationTablet md:bg-destinationDesktop bg-cover bg-center flex flex-col  w-full text-white p-6 sm:px-10 md:pl-14 md:pt-10  min-h-screen'>
 			<Navbar />
@@ -16,7 +22,7 @@ const Destination = () => {
 				<div className='md:flex'>
 					<img
 						className=' rotator h-[170px] sm:h-56 md:h-[300px] aspect-square mx-auto mt-8 mb-5 sm:my-14'
-						src={data.destinations[activeDestination].images.png}
+						src={pics[activeDestination]}
 						alt=''
 					/>
 					<div className=' md:flex md:flex-col md:text-left md:max-w-[450px] md:pr-11'>
