@@ -9,7 +9,7 @@ const Destination = () => {
 		<div className='bg-destinationMobile sm:bg-destinationTablet md:bg-destinationDesktop bg-cover bg-center flex flex-col  w-full text-white p-6 sm:px-10 md:pl-14 md:pt-10  min-h-screen'>
 			<Navbar />
 			<main className=' container mx-auto text-center w-full mt-6 sm:mt-12 md:mt-24'>
-				<h2 className='text-left font-barlow text-base tracking-[2.7px] sm:text-xl sm:tracking-[3.38px] md:mb-16'>
+				<h2 className=' text-center sm:text-left font-barlow text-base tracking-[2.7px] sm:text-xl sm:tracking-[3.38px] md:mb-16'>
 					<span className='font-bold opacity-25 mr-[18px]'>01</span>PICK YOUR
 					DESTINATION
 				</h2>
