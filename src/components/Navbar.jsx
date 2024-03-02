@@ -1,11 +1,31 @@
-import React from "react";
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import logo from '../assets/images/shared/logo.svg'
+import React from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { NavLink } from 'react-router-dom';
+import logo from '../assets/images/shared/logo.svg';
 
 const Navbar = () => {
-	const [open, setopen] = useState(false)
+	const [open, setopen] = useState(false);
+	const navRef = useRef(null);
+	const btnRef = useRef(null);
 
+	const handleClick = (event) => {
+		if ((
+			btnRef.current.contains(event.target) &&
+			btnRef.current.classList.contains('bg-iconOpen')
+		)||(navRef.current.contains(event.target)) ){
+			setopen(true);
+		} else {
+			setopen(false);
+		}
+	};
+
+	useEffect(() => {
+		document.addEventListener('click', handleClick);
+
+		return () => {
+			document.removeEventListener('click', handleClick);
+		};
+	}, []);
 
 	return (
 		<>
@@ -16,16 +36,19 @@ const Navbar = () => {
 					alt=''
 				/>
 				<div
+					ref={btnRef}
 					className={`sm:hidden ${
 						open ? 'bg-iconClose' : 'bg-iconOpen'
 					} bg-cover bg-center bg-no-repeat h-6 w-7 transition-all duration-200 ease-in-out z-10 cursor-pointer`}
-					onClick={() => {
-						setopen(!open);
-					}}></div>
+					// onClick={() => {
+					// 	setopen(!open);
+					// }}
+				></div>
 			</header>
 
 			<nav
-			id="mainNav"
+				ref={navRef}
+				id='mainNav'
 				className={`text-white  ${
 					open
 						? 'max-sm:visible max-sm:opacity-100'
