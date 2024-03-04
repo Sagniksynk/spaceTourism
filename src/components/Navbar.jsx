@@ -40,9 +40,6 @@ const Navbar = () => {
 					className={`sm:hidden ${
 						open ? 'bg-iconClose' : 'bg-iconOpen'
 					} bg-cover bg-center bg-no-repeat h-6 w-7 transition-all duration-200 ease-in-out z-10 cursor-pointer`}
-					// onClick={() => {
-					// 	setopen(!open);
-					// }}
 				></div>
 			</header>
 
