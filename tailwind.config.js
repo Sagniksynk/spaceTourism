@@ -15,24 +15,7 @@ export default {
         bellefair : ["Bellefair"],
         barlow : ["Barlow Condensed"],
       },
-      fontSize: {
-        heading1: ['150px'],
-        heading2: ['100px'],
-        heading3: ['56px'],
-        heading4: ['32px'],
-        heading5: ['28px'],
-        subheading1: ['28px'],
-        subheading2: ['14px'],
-        navText: ['16px'],
-        body: ['18px'],
-      },
-      // tracking for letter spacing
-  
-      letterSpacing:{
-        heading5 : '4.75px',
-        subheading2: '2.35px',
-        navText: '2.7px',
-      },
+
       backgroundImage: {
         homeMobile: "url('./assets/images/home/background-home-mobile.jpg')",
         homeTablet: "url('./assets/images/home/background-home-tablet.jpg')",
@@ -48,6 +31,9 @@ export default {
         techDesktop: "url('./assets/images/technology/background-technology-desktop.jpg')",
         iconOpen: "url('./assets/images/shared/icon-hamburger.svg')",
         iconClose: "url('./assets/images/shared/icon-close.svg')",
+      },
+      screens:{
+        'md': '1040px',
       },
     }
   },

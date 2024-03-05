@@ -50,13 +50,13 @@ const Crew = () => {
 
 	return (
 		<div
-			className='bg-crewMobile sm:bg-crewTablet md:bg-crewDesktop bg-cover text-white w-full p-6 sm:px-10 sm:pb-0 md:pl-14 md:pt-10 h-screen sm:h-[110vh] md:h-screen overflow-hidden  '
+			className='bg-crewMobile sm:bg-crewTablet md:bg-crewDesktop bg-cover text-white w-full sm:pb-0  h-screen sm:h-[110vh] md:h-screen overflow-hidden  '
 			onTouchStart={handleTouchStart}
 			onTouchMove={handleTouchMove}
 			onTouchEnd={handleTouchEnd}>
 			<Navbar />
-			<main className='flex flex-col items-center sm:gap-7 w-full h-full mt-6 sm:mt-12 md:mt-24 mx-auto space-y-8 md:pl-28'>
-				<h2 className='text-center sm:mr-auto font-barlow text-base tracking-[2.7px] sm:text-xl sm:tracking-[3.38px] md:mb-16 md:text-[28px] md:tracking-[4.72px]'>
+			<main className='flex flex-col items-center sm:gap-7 w-full h-full mt-6 sm:mt-12 md:mt-24 mx-auto space-y-8  md:pl-28'>
+				<h2 className='text-center sm:mr-auto font-barlow text-base tracking-[2.7px] sm:text-xl sm:tracking-[3.38px] md:mb-16 md:text-[28px] md:tracking-[4.72px] sm:ml-9 md:ml-0'>
 					<span className='font-bold opacity-25 mr-[18px]'>02</span>MEET YOUR
 					CREW{' '}
 				</h2>
@@ -69,29 +69,29 @@ const Crew = () => {
 					<div className='sm:order-2 md:self-start md:ml-3 '>
 						<ul className='flex w-[88px] justify-between  mx-auto mb-8 sm:mt-8 sm:mb-0  '>
 							<li
-								className={`h-[10px] w-[10px] cursor-pointer bg-white block rounded-full ${
-									crew !== 0 ? 'opacity-20' : 'opacity-100'
+								className={`h-[10px] w-[10px] cursor-pointer bg-white block rounded-full  ${
+									crew !== 0 ? 'opacity-20 md:hover:opacity-50' : 'opacity-100'
 								}`}
 								onClick={() => {
 									setcrew(0);
 								}}></li>
 							<li
-								className={`h-[10px] w-[10px] cursor-pointer bg-white block rounded-full ${
-									crew !== 1 ? 'opacity-20' : 'opacity-100'
+								className={`h-[10px] w-[10px] cursor-pointer bg-white block rounded-full  ${
+									crew !== 1 ? 'opacity-20 md:hover:opacity-50' : 'opacity-100'
 								}`}
 								onClick={() => {
 									setcrew(1);
 								}}></li>
 							<li
-								className={`h-[10px] w-[10px] cursor-pointer bg-white block rounded-full ${
-									crew !== 2 ? 'opacity-20' : 'opacity-100'
+								className={`h-[10px] w-[10px] cursor-pointer bg-white block rounded-full  ${
+									crew !== 2 ? 'opacity-20 md:hover:opacity-50' : 'opacity-100'
 								}`}
 								onClick={() => {
 									setcrew(2);
 								}}></li>
 							<li
 								className={`h-[10px] w-[10px] cursor-pointer bg-white block rounded-full ${
-									crew !== 3 ? 'opacity-20' : 'opacity-100'
+									crew !== 3 ? 'opacity-20 md:hover:opacity-50' : 'opacity-100'
 								}`}
 								onClick={() => {
 									setcrew(3);

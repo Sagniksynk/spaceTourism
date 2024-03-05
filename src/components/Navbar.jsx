@@ -29,7 +29,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<header className='flex justify-between items-center w-full '>
+			<header className='flex justify-between items-center w-full p-6 sm:px-10 md:pl-14 md:pt-10 '>
 				<img
 					className='h-10 sm:h-12 aspect-square'
 					src={logo}
@@ -39,8 +39,7 @@ const Navbar = () => {
 					ref={btnRef}
 					className={`sm:hidden ${
 						open ? 'bg-iconClose' : 'bg-iconOpen'
-					} bg-cover bg-center bg-no-repeat h-6 w-7 transition-all duration-200 ease-in-out z-10 cursor-pointer`}
-				></div>
+					} bg-cover bg-center bg-no-repeat h-6 w-7 transition-all duration-200 ease-in-out z-10 cursor-pointer`}></div>
 			</header>
 
 			<nav
