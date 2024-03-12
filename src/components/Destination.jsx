@@ -1,6 +1,5 @@
 import React, { useState, useRef, Suspense } from "react";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader";
-import { useGLTF } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
@@ -11,7 +10,6 @@ import moon from "../assets/images/destination/image-moon.png";
 import mars from "../assets/images/destination/image-mars.png";
 import europa from "../assets/images/destination/image-europa.png";
 import titan from "../assets/images/destination/image-titan.png";
-import { group } from "console";
 
 //mars planet
 const Mars = () => {
@@ -19,7 +17,7 @@ const Mars = () => {
 	const marsRef = useRef();
 	useFrame(() => {
 		if (marsRef.current) {
-			// marsRef.current.rotation.y += 0.004;
+			marsRef.current.rotation.y += 0.004;
 		}
 	});
 	const modelProps = {
@@ -46,9 +44,7 @@ const Europa = () => {
 	};
 
 	return (
-		<group ref={europaRef}>
-	<primitive object={gltf.scene} {...modelProps} />
-	</group>
+	<primitive ref={europaRef} object={gltf.scene} {...modelProps} />
 	);
 };
 
