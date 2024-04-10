@@ -4,7 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html{
+    background-color: #0B0D17;
+}
 
 @media (width > 640px) {
     nav>a::after {
@@ -80,5 +82,3 @@
         transform: rotate(360deg);
     }
 }
-
-
