@@ -8,9 +8,15 @@ import mars from "../assets/images/destination/image-mars.png";
 import europa from "../assets/images/destination/image-europa.png";
 import titan from "../assets/images/destination/image-titan.png";
 
-
 const Destination = () => {
 	const [activeDestination, setactiveDestination] = useState(0);
+	const planetUrls = [
+		"https://prod.spline.design/HIfW0Nr0f3iEY2OU/scene.splinecode",
+		"https://prod.spline.design/CJ4YWQN7V3rHnGsp/scene.splinecode",
+		"https://prod.spline.design/g2ItcebU0x09DTq9/scene.splinecode",
+		"https://prod.spline.design/C0PUeEQqghNmB8Do/scene.splinecode",
+	];
+	//[mooon , mars , euroopa , titan] 
 	const pics = [moon, mars, europa, titan];
 	return (
 		<div className="bg-destinationMobile sm:bg-destinationTablet md:bg-destinationDesktop bg-cover bg-center flex flex-col  w-full text-white min-h-screen">
@@ -26,22 +32,19 @@ const Destination = () => {
 						src={pics[activeDestination]}
 						alt=''
 					/> */}
-
 					<Helmet>
-					<script
-						type="module"
-						src="https://unpkg.com/@splinetool/viewer@1.0.93/build/spline-viewer.js"
+						<script
+							type="module"
+							src="https://unpkg.com/@splinetool/viewer@1.0.93/build/spline-viewer.js"
 						></script>
 					</Helmet>
-					<spline-viewer
-						loading-anim-type="none"
-						url="https://prod.spline.design/CJ4YWQN7V3rHnGsp/scene.splinecode"
-						style={{ width: '100%', height: '300px' }} 
-						className="md:w-[500px] mx-auto" 
-						show-logo="false"
-					></spline-viewer>
-					
 
+					<spline-viewer
+						key={activeDestination}
+						loading-anim-type="none"
+						url={planetUrls[activeDestination]}
+						></spline-viewer>
+				
 
 					<div className=" md:flex md:flex-col md:text-left md:max-w-[450px] md:pr-11">
 						<DestinationNav
