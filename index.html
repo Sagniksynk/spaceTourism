@@ -9,5 +9,16 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      function hideLogo(){
+        try {
+          document.querySelector('spline-viewer').shadowRoot.querySelector('#logo').style.display = 'none'
+        } catch {}
+        requestAnimationFrame(hideLogo) 
+         // Uncomment this if the logo comes back even after hiding
+      }
+      
+      hideLogo()
+    </script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 import React, { useState, useRef, Suspense } from "react";
+import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "./Navbar";
 import DestinationNav from "./DestinationNav";
@@ -9,6 +10,13 @@ import europa from "../assets/images/destination/image-europa.png";
 import titan from "../assets/images/destination/image-titan.png";
 
 const Destination = () => {
+	useEffect(() => {
+		const logoElement = document.querySelector("#logo");
+		if (logoElement) {
+			logoElement.style.display = "none";
+		}
+	}, []);
+
 	const [activeDestination, setactiveDestination] = useState(0);
 	const planetUrls = [
 		"https://prod.spline.design/HIfW0Nr0f3iEY2OU/scene.splinecode",
@@ -16,7 +24,7 @@ const Destination = () => {
 		"https://prod.spline.design/g2ItcebU0x09DTq9/scene.splinecode",
 		"https://prod.spline.design/C0PUeEQqghNmB8Do/scene.splinecode",
 	];
-	//[mooon , mars , euroopa , titan] 
+	//[mooon , mars , euroopa , titan]
 	const pics = [moon, mars, europa, titan];
 	return (
 		<div className="bg-destinationMobile sm:bg-destinationTablet md:bg-destinationDesktop bg-cover bg-center flex flex-col  w-full text-white min-h-screen">
@@ -39,14 +47,12 @@ const Destination = () => {
 						></script>
 					</Helmet>
 					<div className=" h-[40vh] ">
-
-					<spline-viewer
-						key={activeDestination}
-						loading-anim-type="none"
-						url={planetUrls[activeDestination]}
+						<spline-viewer
+							key={activeDestination}
+							loading-anim-type="none"
+							url={planetUrls[activeDestination]}
 						></spline-viewer>
 					</div>
-				
 
 					<div className=" md:flex md:flex-col md:text-left md:max-w-[450px] md:pr-11">
 						<DestinationNav
