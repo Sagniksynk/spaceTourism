@@ -13,6 +13,7 @@ dist-ssr
 *.local
 #the starter files
 starter-code
+random.txt
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
