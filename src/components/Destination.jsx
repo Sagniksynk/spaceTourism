@@ -38,12 +38,14 @@ const Destination = () => {
 							src="https://unpkg.com/@splinetool/viewer@1.0.93/build/spline-viewer.js"
 						></script>
 					</Helmet>
+					<div className=" h-[40vh] ">
 
 					<spline-viewer
 						key={activeDestination}
 						loading-anim-type="none"
 						url={planetUrls[activeDestination]}
 						></spline-viewer>
+					</div>
 				
 
 					<div className=" md:flex md:flex-col md:text-left md:max-w-[450px] md:pr-11">
