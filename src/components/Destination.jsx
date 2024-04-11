@@ -1,5 +1,4 @@
 import React, { useState, useRef, Suspense } from "react";
-import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "./Navbar";
 import DestinationNav from "./DestinationNav";
@@ -10,12 +9,6 @@ import europa from "../assets/images/destination/image-europa.png";
 import titan from "../assets/images/destination/image-titan.png";
 
 const Destination = () => {
-	useEffect(() => {
-		const logoElement = document.querySelector("#logo");
-		if (logoElement) {
-			logoElement.style.display = "none";
-		}
-	}, []);
 
 	const [activeDestination, setactiveDestination] = useState(0);
 	const planetUrls = [
