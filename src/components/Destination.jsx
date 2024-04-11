@@ -39,7 +39,7 @@ const Destination = () => {
 							src="https://unpkg.com/@splinetool/viewer@1.0.93/build/spline-viewer.js"
 						></script>
 					</Helmet>
-					<div className=" h-[40vh] ">
+					<div className=" h-[40vh] md:h-[300px] aspect-square mx-auto mt-8 mb-5 sm:my-14">
 						<spline-viewer
 							key={activeDestination}
 							loading-anim-type="none"
