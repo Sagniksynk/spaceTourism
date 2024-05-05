@@ -5,26 +5,26 @@ is a eye 👀 catchy site that showcases various technologies🛠️ and informa
 
 If u want to test the code or contribute to the code , copy the url ; 
 
-'''
+```
 https://github.com/Chet25/spaceTourism
-'''
+```
 
 go to your terminal and paste : 
 
-''' 
+```bash 
 git clone https://github.com/Chet25/spaceTourism 
-'''
+```
 
 next , install the dependencies 
 
-''' 
+``` 
 npm install
-''' 
+```
 
 and to run the server and see the out ; 
 
-'''
+```
 npm run dev 
-'''
+```
 
-note : break it play with it dont stop 
+### note : break it play with it.
