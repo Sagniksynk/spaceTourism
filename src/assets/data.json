@@ -1,41 +1,73 @@
 {
   "destinations": [
     {
-      "name": "Moon",
-      "images": {
-        "png": "./src/assets/images/destination/image-moon.png",
-        "webp": "./src/assets/images/desination/image-moon.webp"
-      },
+      "name": "Sun",
+      "description": "The Sun is the star at the center of our solar system. It provides light and heat, essential for life on Earth.",
+      "distance": "149.6 million km",
+      "travel": "107 days"
+    },
+    {
+      "name": "Mercury",
+      "description": "The closest planet to the Sun, Mercury is known for its extreme temperature changes and barren surface.",
+      "distance": "91.7 million km",
+      "travel": "66 days"
+    },
+    {
+      "name": "Venus",
+      "description": "Venus is Earth's 'sister planet' with a thick atmosphere of clouds and scorching temperatures.",
+      "distance": "41.4 million km",
+      "travel": "30 days"
+    },
+    {
+      "name": "Earth",
       "description": "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
       "distance": "384,400 km",
       "travel": "3 days"
     },
     {
       "name": "Mars",
-      "images": {
-        "png": "./src/assets/images/destination/image-mars.png",
-        "webp": "./src/assets/images/destination/image-mars.webp"
-      },
       "description": "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
-      "distance": "225 mil. km",
-      "travel": "9 months"
+      "distance": "78.3 million km",
+      "travel": "56 days"
+    },
+    {
+      "name": "Jupiter",
+      "description": "The largest planet in the solar system, Jupiter is known for its Great Red Spot and its many moons.",
+      "distance": "628.7 million km",
+      "travel": "452 days (~1.24 years)"
+    },
+    {
+      "name": "Saturn",
+      "description": "Known for its stunning rings, Saturn is a gas giant with an atmosphere mostly made of hydrogen and helium.",
+      "distance": "1.27 billion km",
+      "travel": "~905 days (~2.48 years)"
+    },
+    {
+      "name": "Uranus",
+      "description": "Uranus is an ice giant with a tilt that causes extreme seasons and unusual weather patterns.",
+      "distance": "2.72 billion km",
+      "travel": "~2,011 days (~5.51 years)"
+    },
+    {
+      "name": "Neptune",
+      "description": "The farthest planet from the Sun, Neptune is a cold, dark world with violent storms.",
+      "distance": "4.35 billion km",
+      "travel": "~3,130 days (~8.57 years)"
+    },
+    {
+      "name": "Pluto",
+      "description": "Once considered the ninth planet, Pluto is now classified as a dwarf planet and is known for its icy surface and small size.",
+      "distance": "5.9 billion km",
+      "travel": "10 years"
     },
     {
       "name": "Europa",
-      "images": {
-        "png": "./src/assets/images/destination/image-europa.png",
-        "webp": "./src/assets/images/destination/image-europa.webp"
-      },
       "description": "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
       "distance": "628 mil. km",
       "travel": "3 years"
     },
     {
       "name": "Titan",
-      "images": {
-        "png": "./src/assets/images/destination/image-titan.png",
-        "webp": "./src/assets/images/destination/image-titan.webp"
-      },
       "description": "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
       "distance": "1.6 bil. km",
       "travel": "7 years"

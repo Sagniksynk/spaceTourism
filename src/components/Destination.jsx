@@ -12,10 +12,13 @@ const Destination = () => {
 
 	const [activeDestination, setactiveDestination] = useState(0);
 	const planetUrls = [
-		"https://prod.spline.design/HIfW0Nr0f3iEY2OU/scene.splinecode",
-		"https://prod.spline.design/CJ4YWQN7V3rHnGsp/scene.splinecode",
-		"https://prod.spline.design/g2ItcebU0x09DTq9/scene.splinecode",
+		"https://prod.spline.design/bm41d5mKG0VBeCHa/scene.splinecode",//sun
+		"https://prod.spline.design/oNUcWhf4OXTgqHKu/scene.splinecode",//mercury
+		"https://prod.spline.design/gHdKcSx6gAb5oFCM/scene.splinecode",//venus
+		"https://prod.spline.design/IqBmzcCXJlAsz4lP/scene.splinecode",//earth
+		"https://prod.spline.design/CJ4YWQN7V3rHnGsp/scene.splinecode",//mars
 		"https://prod.spline.design/C0PUeEQqghNmB8Do/scene.splinecode",
+		"https://prod.spline.design/g2ItcebU0x09DTq9/scene.splinecode",
 	];
 	//[mooon , mars , euroopa , titan]
 	const pics = [moon, mars, europa, titan];
@@ -78,7 +81,7 @@ const Destination = () => {
 								</div>
 								<div className="my-8">
 									<h4 className="font-barlow text-secondary text-sm tracking-[2.36px] mb-3">
-										EST. TRAVEL TIME
+										EST. TRAVEL TIME (at 58,000 km/h)
 									</h4>
 									<span className="font-bellefair text-[28px] uppercase">
 										{

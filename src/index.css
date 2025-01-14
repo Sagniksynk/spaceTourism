@@ -72,6 +72,57 @@ html{
     transform: rotate(0deg);
     animation: rotation 15s linear infinite;
 }
+/* Add to your CSS file */
+
+/* Container for the scrollable navigation */
+.destination-nav-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Hides the vertical scrollbar */
+    padding: 10px 0px;
+    height: 40px; /* Set a fixed height to avoid the vertical scrollbar */
+  }
+  
+  /* Flex container for dots */
+  ul {
+    display: flex; /* Flexbox for horizontal alignment */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Dot style for each planet */
+  li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  /* Active dot style */
+  .dot-active {
+    background-color: #ffffff;
+    transform: scale(1.2); /* Optional: Scale up the active dot */
+  }
+  
+  /* Inactive dot style */
+  .dot {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent inactive dot */
+  }
+  
+  /* Hover effect for the dots */
+  li:hover {
+    background-color: #ffffff;
+    transform: scale(1.2); /* Optional: Scale on hover */
+  }
+  
+  
 
 @keyframes rotation {
     from {
