@@ -21,7 +21,7 @@ const Destination = () => {
 		"https://prod.spline.design/g2ItcebU0x09DTq9/scene.splinecode",
 	];
 	//[mooon , mars , euroopa , titan]
-	const pics = [moon, mars, europa, titan];
+	//const pics = [moon, mars, europa, titan];
 	return (
 		<div className="bg-destinationMobile sm:bg-destinationTablet md:bg-destinationDesktop bg-cover bg-center flex flex-col  w-full text-white min-h-screen">
 			<Navbar />
