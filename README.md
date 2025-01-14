@@ -6,13 +6,13 @@ is a eye 👀 catchy site that showcases various technologies🛠️ and informa
 If u want to test the code or contribute to the code , copy the url ; 
 
 ```
-https://github.com/Chet25/spaceTourism
+(https://github.com/Sagniksynk/spaceTourism.git)
 ```
 
 go to your terminal and paste : 
 
 ```bash 
-git clone https://github.com/Chet25/spaceTourism 
+git clone (https://github.com/Sagniksynk/spaceTourism.git)
 ```
 
 next , install the dependencies 
