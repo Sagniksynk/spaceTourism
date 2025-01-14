@@ -31,4 +31,3 @@ or you want to test on mobile ;
 ```
 npm run host
 ```
-### note : break it play with it.
