@@ -7,7 +7,7 @@ import Home from './components/Home';
 import Crew from './components/Crew';
 import Destination from './components/Destination';
 import Technology from './components/Technology';
-
+import PlayGround from './components/PlayGround.jsx';
 const router = createBrowserRouter([
 	{
 		path: '/',
@@ -26,6 +26,10 @@ const router = createBrowserRouter([
 	{
 		path: '/tech',
 		element: <Technology />,
+	},
+	{
+		path: '/playground',
+		element: <PlayGround />,
 	},
 ]);
 

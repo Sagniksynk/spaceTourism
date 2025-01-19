@@ -6,9 +6,10 @@ import data from "../assets/data.json";
 
 // Import AR models
 const planetARModels = [
+  new URL("../assets/models/sun.glb", import.meta.url).href,
+  new URL("../assets/models/mercury.glb", import.meta.url).href,
+  new URL("../assets/models/venus.glb", import.meta.url).href,
   new URL("../assets/models/earth.glb", import.meta.url).href,
-//   new URL("../assets/models/mars.glb", import.meta.url).href,
-//   new URL("../assets/models/europa.glb", import.meta.url).href,
 //   new URL("../assets/models/titan.glb", import.meta.url).href,
 ];
 
@@ -20,9 +21,11 @@ const Destination = () => {
     "https://prod.spline.design/oNUcWhf4OXTgqHKu/scene.splinecode", // Mercury
     "https://prod.spline.design/gHdKcSx6gAb5oFCM/scene.splinecode", // Venus
     "https://prod.spline.design/IqBmzcCXJlAsz4lP/scene.splinecode", // Earth
-    "https://prod.spline.design/CJ4YWQN7V3rHnGsp/scene.splinecode", // Mars
-    "https://prod.spline.design/C0PUeEQqghNmB8Do/scene.splinecode", // Jupiter
-    "https://prod.spline.design/g2ItcebU0x09DTq9/scene.splinecode", // Saturn
+    "https://prod.spline.design/XsBbB5IYmQ7fl0kP/scene.splinecode", // Mars
+    "https://prod.spline.design/6GMRRNey4QR5c0df/scene.splinecode", // Jupiter
+    "https://prod.spline.design/pEBWDPFcuregYm2E/scene.splinecode", // Saturn
+    "https://prod.spline.design/4mI9cKGjSnWH94nb/scene.splinecode", // uranus
+    "https://prod.spline.design/Q5Zxrj2YoIYboxYi/scene.splinecode", //neptune
   ];
 
   return (
